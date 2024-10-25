@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #c3cfd9;
+
+    @media (min-width: 1220px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 50px;
+    }
+
+    &__logo-container {
+
+        @media (min-width: 1220px) {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            margin-bottom: 20px;
+
+            @media (min-width: 1220px) {
+                margin-bottom: 0px;
+                margin-right: 20px;
+            }
+        }
+        
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0075cd;
+            margin-bottom: 50px;
+
+            @media (min-width: 1220px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    button {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}
